@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="static/styles.css">
-    <script src="script.js"></script>
     <title>Notícias dos Amigos!</title>
     <!-- Link do CSS do Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -15,13 +14,14 @@
       <div class="container">
         <!-- Texto à esquerda -->
         <a href="#"><img class="logo-img" src="static/assets/logo.png" alt="Logo Notícias dos Amigos" class="logo-img"></a>
-        <h2 class="navbar-brand" href="#">Notícias dos <strong>Amigos!</strong> <br> <p>O maior site de noticías entre os amigos</p></h2>
+        <h1 class="navbar-brand" href="#">Notícias dos <strong>Amigos!</strong> <br> <p>O maior site de noticías entre os amigos</p></h1>
         <p>Bem-vindo ao portal das últimas novidades entre os amigos!<br>Todo o tipo de notícia verdadeira e falsa para o seu entrenimento</p>
         
         <!-- Botões à direita -->
         <div>
           <a href="#sobre" class="btn btn-outline-light me-2">Sobre</a>
           <a href="#contato" class="btn btn-outline-light">Contato</a>
+          <a href="https://www.facebook.com/quebrandootabu/" class="btn btn-outline-light">Notícias proibidas</a>
         </div>
       </div>
     </nav>
@@ -32,7 +32,7 @@
         <main class="container-fluid">
           <!-- Secção principal -->
           <section>
-            <h2>Destaques do Dia</h2>
+            <h1>Destaques do Dia</h1>
             <div id="noticiasCarrossel" class="carousel slide" data-bs-ride="carousel">
               <!-- Indicadores (opcional) -->
               <div class="carousel-indicators">
@@ -160,7 +160,7 @@
           <!-- Lista ordenada e não ordenada -->
 
           <section>
-            <h3>Assuntos</h3>
+            <h1>Assuntos</h1>
             <div id="assuntosCarrossel" class="carousel slide" data-bs-ride="carousel">
               <!-- Indicadores (opcional) -->
               <div class="carousel-indicators">
@@ -248,9 +248,14 @@
               </div>
           </section>
 
+
+          <br><br>
+
+
           <div class="container-2">
+
             <div class="inline-block">
-              
+              <h3>Assuntos abordados</h3>              
               <ul class="inline-block">
                 <li>Esportes</li>
                 <li>Política</li>
@@ -260,55 +265,102 @@
                 <li>Notícias mundiais</li>
               </ul>
             </div>
+
             <div class="inline-block">
               <h3>Tópicos especiais</h3>
               <ol class="inline-block">
-                <li>Eventos da Semana</li>
-                <li>Coluna do Amigo</li>
-                <li>Top Notícias</li>
-                <li>Encontro com Bátima Fernardes</li>
-                <li>Previsão do tempo</li>
-                <li><a href="httpdumy">ir para um site aleatório</a></li>
+                <li> <a href="https://www.destino.foz.br/calendario-de-eventos/">Eventos da Semana</a> </li>
+                <li> <a href="https://www.h2foz.com.br/filosofia-para-o-dia-a-dia/filosofia-do-martelo/">Coluna da caverna </a></li>
+                <li> <a href="https://scholar.google.com/citations?user=6Rufb-MAAAAJ&hl=pt-PT">trabalhos academicos publicados pelos amigos</a></li>
+                <li> <a href="https://play.anghami.com/episode/1046666478">Encontro com Bátima Fernardes</a> </li>
+                <li> <a href="https://www.climatempo.com.br/previsao-do-tempo/15-dias/cidade/272/fozdoiguacu-pr">Previsão do tempo </a></li>
+                <li><a href="#" target="_blank">ir para um site aleatório</a></li>
               </ol>
             </div>
             <br><br>
             <!-- Tabela de notícias populares -->
-            <h2>Notícias Populares</h2>
+            <h2>Notícias de outros portais</h2>
             <table class="table table-striped inline-block">
               <thead>
                 <tr>
                   <th>#</th>
                   <th>Título</th>
-                  <th>Categoria</th>
+                  <th>Descrição</th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
                   <td>1</td>
-                  <td>Golpe no WhatsApp! <br> Detalhes adicionais da notícia </td>
-                  <td>Tecnologia</td>
+                  <td>Golpe no WhatsApp! </td>
+                  <td> Homem se passa por Brad piterson em relacionamento fictício com velha senhora </td>
                 </tr>
                 <tr>
                   <td>2</td>
                   <td>Amigo da Onça surpreende</td>
-                  <td>Curiosidades</td>
+                  <td>Mulher presenteia com panetone do Muffato, mas carma se vinga e ela acaba levando o bolo pra casa</td>
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Descoberta arqueológica</td>
-                  <td>Ciência</td>
+                  <td>Descoberta arqueológica no Norte de Minas Gerais</td>
+                  <td>Jovem encontra queijo de 2000 mil anos conservado em um barril de mahogany, "Amanhã eu num tiro leite, uai!"</td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <!-- Imagem de destaque -->
-          <h2>Imagem do Dia</h2>
-          <img src="https://picsum.photos/800/1000" alt="Imagem do Dia" class="img-fluid inline-block" width="400" height="500">
-        </main>
-      </div>
-    </div>
+          <div class="container mt-4">
+            <div class="row">
+              <!-- Imagem do Dia -->
+              <div class="col-md-6">
+                <h2>Imagem do Dia</h2>
+                <img src="https://picsum.photos/800/1000" alt="Imagem do Dia" class="img-fluid" width="400" height="500">
+              </div>
+          
+              <!-- Box de Formulário -->
+              <div class="col-md-6">
+                <h4>Acha que podemos melhorar? <strike>Problema seu</strike> Envie sua Opinião.</h4>
+                <form>
+                  <!-- Nome -->
+                  <div class="mb-3">
+                    <label for="nome" class="form-label">Nome</label>
+                    <input type="text" id="nome" class="form-control" placeholder="Digite seu nome" required>
+                  </div>
 
+                  <!-- Data -->
+                  <div class="mb-3">
+                  <label for="data" class="form-label">Data de nascimento</label>
+                  <input type="date" id="nome" class="form-control" placeholder="Digite a data" required>
+                  </div>
+          
+                  <!-- Telefone -->
+                  <div class="mb-3">
+                    <label for="telefone" class="form-label">Telefone</label>
+                    <input type="number" id="telefone" class="form-control" placeholder="Digite seu telefone" required>
+                  </div>
+          
+                  <!-- Caixa de Texto -->
+                  <div class="mb-3">
+                    <label for="mensagem" class="form-label">Mensagem</label>
+                    <textarea id="mensagem" class="form-control" rows="4" placeholder="Digite sua mensagem"></textarea>
+                  </div>
+          
+                  <!-- Input de Arquivo -->
+                  <div class="mb-3">
+                    <label for="arquivo" class="form-label">Anexar artigo (pdf)</label>
+                    <input type="file" id="arquivo" class="form-control">
+                  </div>
+          
+                  <!-- Botão de Envio -->
+                  <button type="submit" class="btn btn-danger">Enviar</button>
+                </form>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    
+    
     <footer class="container-4 text-center mt-4">
       <div class="footer-logo inline-block">
         <img src="static/assets/logo.png" alt="Logo Notícias dos Amigos" class="logo-img">
@@ -330,7 +382,7 @@
           <li><a href="#">Torne-se parte da nossa equipe</a></li>
           <li><a href="#">Política de privacidade</a></li>
         </ul>
-      </div>
+      </div> 
 
       <!-- Formulário de Newsletter -->
       <div class="footer-newsletter inline-block">
@@ -352,5 +404,6 @@
 
     <!-- Script do Bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

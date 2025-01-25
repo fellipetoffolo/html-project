@@ -1,13 +1,20 @@
 // Function Declaration: Validação de Formulário
 function validateEmail() {
-    const emailInput = document.getElementById('email-input').value;
-    if (emailInput === '') {
+  const emailInput = document.getElementById('email-input').value.trim(); // Remove espaços extras
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/; // Expressão regular para validar email
+
+  if (emailInput === '') {
+      alert('Por favor, insira um email!');
+      return false;
+  } else if (!emailRegex.test(emailInput)) {
       alert('Por favor, insira um email válido!');
       return false;
-    }
-    alert(`Inscrição confirmada para: ${emailInput}`);
-    return true;
   }
+
+  alert(`Inscrição confirmada para: ${emailInput}`);
+  return true;
+}
+
   
   // Function Expression: Manipulação de Mouse (hover na logo)
   const highlightLogo = function () {
@@ -50,6 +57,23 @@ function validateEmail() {
     event.preventDefault(); // Previne o envio do formulário
     validateEmail();
   });
+
+// Seleciona o primeiro slide do carrossel
+const firstSlide = document.querySelector('.carousel-item:first-child');
+
+// Seleciona a primeira imagem dentro do primeiro slide
+if (firstSlide) {
+    const firstImage = firstSlide.querySelector('img'); // Ajuste o seletor caso a imagem esteja envolvida por outro elemento
+
+    // Adiciona um evento de clique à primeira imagem
+    if (firstImage) {
+        firstImage.addEventListener('click', () => {
+            // Abre o link em uma nova guia
+            window.open('https://www.youtube.com/watch?v=zzF9D5w63gs&ab_channel=CompadreTiguera', '_blank'); // Substitua pelo link desejado
+        });
+    }
+}
+
   
   const logo = document.querySelector('.logo-img');
   logo.addEventListener('mouseover', highlightLogo); // Evento de mouse (hover)
