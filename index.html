@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="script.js"></script>
+    <title>Notícias dos Amigos!</title>
+    <!-- Link do CSS do Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  </head>
+  <body>
+    
+    <nav class="navbar navbar-dark bg-dark">
+      <div class="container">
+        <!-- Texto à esquerda -->
+        <a href="#"><img class="logo-img" src="static/assets/logo.png" alt="Logo Notícias dos Amigos" class="logo-img"></a>
+        <h2 class="navbar-brand" href="#">Notícias dos <strong>Amigos!</strong> <br> <p>O maior site de noticías entre os amigos</p></h2>
+        <p>Bem-vindo ao portal das últimas novidades entre os amigos!<br>Todo o tipo de notícia verdadeira e falsa para o seu entrenimento</p>
+        
+        <!-- Botões à direita -->
+        <div>
+          <a href="#sobre" class="btn btn-outline-light me-2">Sobre</a>
+          <a href="#contato" class="btn btn-outline-light">Contato</a>
+        </div>
+      </div>
+    </nav>
+    
+
+    <div class="content-wrapper-wrapper">
+      <div class="content-wrapper">
+        <main class="container-fluid">
+          <!-- Secção principal -->
+          <section>
+            <h2>Destaques do Dia</h2>
+            <div id="noticiasCarrossel" class="carousel slide" data-bs-ride="carousel">
+              <!-- Indicadores (opcional) -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#noticiasCarrossel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#noticiasCarrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#noticiasCarrossel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+          
+              <!-- Slides -->
+              <div class="carousel-inner">
+                <!-- Primeiro slide -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/O_amigo.jpeg" class="card-img-top" alt="Notícia 1">
+                        <div class="card-body">
+                          <h5 class="card-title">Sucesso mundial da música "O amigo"</h5>
+                          <p class="card-text">A banda Musical San Francisco se consagrou no cenário da música paraguaia com o single "O amigo", vendendo 200 discos.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/Chaves.jpeg" class="card-img-top" alt="Notícia 2">
+                        <div class="card-body">
+                          <h5 class="card-title">Lançamento do Bet dos amigos</h5>
+                          <p class="card-text">Novo portal de investimentos é inaugurado nessa segunda-feira.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/damon_pitias.jpeg" class="card-img-top" alt="Notícia 3">
+                        <div class="card-body">
+                          <h5 class="card-title">A história de Damon e Pitias</h5>
+                          <p class="card-text">Como a história de dois amigos pode ensinar muito sobre fidelidade e companheirismo</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Segundo slide -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/tesoura_de_bresa.jpg" class="card-img-top" alt="Notícia 4">
+                        <div class="card-body">
+                          <h5 class="card-title">As lições do Tesouro de Bresa</h5>
+                          <p class="card-text">Como um homem enriqueceu tentando desvendar um enigma para um tesouro que o tornaria rico.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/Yellow Musk.jpg" class="card-img-top" alt="Notícia 5">
+                        <div class="card-body">
+                          <h5 class="card-title">Yellow Mushen aparece sem puxadores</h5>
+                          <p class="card-text">Especialistas em estética comentam o caso ocorrido em conveniência de Jaraguá do Sul.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/Fellow Musk.jpeg" class="card-img-top" alt="Notícia 6">
+                        <div class="card-body">
+                          <h5 class="card-title">Fellow Musk sabota próprios androids</h5>
+                          <p class="card-text">O magnata não queria ser superado pelas máquinas. "Quero ser a melhor versão".</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Terceiro slide -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/Crash.png" class="card-img-top" alt="Notícia 7" width="80%" height="80%">
+                        <div class="card-body">
+                          <h5 class="card-title">A volta de Crash Bandicoot</h5>
+                          <p class="card-text">Cuidado... Ele está aqui.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/buda.jpeg" class="card-img-top" alt="Notícia 8">
+                        <div class="card-body">
+                          <h5 class="card-title">Segurança cibernética vs. espiritual</h5>
+                          <p class="card-text">Cientista da computação transcende e encontra ponte entre os dois mundos.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/trento.jpeg" class="card-img-top" alt="Notícia 9">
+                        <div class="card-body">
+                          <h5 class="card-title">Pesquisadores apontam piores vícios</h5>
+                          <p class="card-text">Doutores renomados categorizam e comparam os piores vícios entre os amigos. Chocolate trento lidera o ranking.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          
+              <!-- Controles de Navegação -->
+              <button class="carousel-control-prev" type="button" data-bs-target="#noticiasCarrossel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#noticiasCarrossel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Próximo</span>
+              </button>
+            </div>
+          </section>
+          
+          <br>
+          <br>
+          <!-- Lista ordenada e não ordenada -->
+
+          <section>
+            <h3>Assuntos</h3>
+            <div id="assuntosCarrossel" class="carousel slide" data-bs-ride="carousel">
+              <!-- Indicadores (opcional) -->
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#assuntosCarrossel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#assuntosCarrossel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+          
+              <!-- Slides -->
+              <div class="carousel-inner">
+                <!-- Primeiro slide -->
+                <div class="carousel-item active">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/marcelo.png" class="card-img-top" alt="Notícia 1">
+                        <div class="card-body">
+                          <h5 class="card-title">Esportes</h5>
+                          <p class="card-text">Confira os melhores gols contra de Marcelo: um verdadeiro camisa 6... do time adversário!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/donald_son.png" class="card-img-top" alt="Notícia 2">
+                        <div class="card-body">
+                          <h5 class="card-title">Política</h5>
+                          <p class="card-text">Donald Trump nega que o filho sofra de gigantismo: 'Ele só está muito perto da câmera'.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/estrela_reality.jpg" class="card-img-top" alt="Notícia 3">
+                        <div class="card-body">
+                          <h5 class="card-title">Celebridades</h5>
+                          <p class="card-text">Estrela de reality show descobre que planta falsa sobreviveu mais que seu último relacionamento.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+          
+                <!-- Segundo slide -->
+                <div class="carousel-item">
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/quadro_branco.jpeg" class="card-img-top" alt="Notícia 4">
+                        <div class="card-body">
+                          <h5 class="card-title">Artes</h5>
+                          <p class="card-text">Exposição moderna apresenta tela branca: crítica afirma ser 'o reflexo perfeito da vida em 2025'.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/robo_varrendo.jpeg" class="card-img-top" alt="Notícia 5">
+                        <div class="card-body">
+                          <h5 class="card-title">Tecnologia e inovação</h5>
+                          <p class="card-text">Cientistas criam robô que limpa sozinho, mas ele já pediu férias após 3 dias na casa de um universitário.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="card">
+                        <img src="static/assets/torre_pizza.jpeg" class="card-img-top" alt="Notícia 6">
+                        <div class="card-body">
+                          <h5 class="card-title">Notícias mundiais</h5>
+                          <p class="card-text">Especialistas confirmam: a Torre de Pisa continua inclinada, mas sua foto no Instagram está mais ainda.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                                <!-- Controles de Navegação -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#assuntosCarrossel" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#assuntosCarrossel" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Próximo</span>
+                </button>
+              </div>
+          </section>
+
+          <div class="container-2">
+            <div class="inline-block">
+              
+              <ul class="inline-block">
+                <li>Esportes</li>
+                <li>Política</li>
+                <li>Entretenimento</li>
+                <li>Artes</li>
+                <li>Tecnologia e inovação</li>
+                <li>Notícias mundiais</li>
+              </ul>
+            </div>
+            <div class="inline-block">
+              <h3>Tópicos especiais</h3>
+              <ol class="inline-block">
+                <li>Eventos da Semana</li>
+                <li>Coluna do Amigo</li>
+                <li>Top Notícias</li>
+                <li>Encontro com Bátima Fernardes</li>
+                <li>Previsão do tempo</li>
+                <li><a href="httpdumy">ir para um site aleatório</a></li>
+              </ol>
+            </div>
+            <br><br>
+            <!-- Tabela de notícias populares -->
+            <h2>Notícias Populares</h2>
+            <table class="table table-striped inline-block">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>Título</th>
+                  <th>Categoria</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Golpe no WhatsApp! <br> Detalhes adicionais da notícia </td>
+                  <td>Tecnologia</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Amigo da Onça surpreende</td>
+                  <td>Curiosidades</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Descoberta arqueológica</td>
+                  <td>Ciência</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Imagem de destaque -->
+          <h2>Imagem do Dia</h2>
+          <img src="https://picsum.photos/800/1000" alt="Imagem do Dia" class="img-fluid inline-block" width="400" height="500">
+        </main>
+      </div>
+    </div>
+
+    <footer class="container-4 text-center mt-4">
+      <div class="footer-logo inline-block">
+        <img src="static/assets/logo.png" alt="Logo Notícias dos Amigos" class="logo-img">
+      </div>
+
+      <div class="footer-content inline-block">
+        <ul class="footer-list">
+          <li><a href="#">Endereço: Rua dos bobos nro. 2</a></li>
+          <li><a href="#">Cidade: Belford Roxo</a></li>
+          <li><a href="#">Email: noticiasdosamigos@gmail.com</a></li>
+          <li><a href="#">Telefone: (45) 99999-9990</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-content inline-block">
+        <ul class="footer-list">
+          <li><a href="#">Quem Somos</a></li>
+          <li><a href="#">Contato</a></li>
+          <li><a href="#">Torne-se parte da nossa equipe</a></li>
+          <li><a href="#">Política de privacidade</a></li>
+        </ul>
+      </div>
+
+      <!-- Formulário de Newsletter -->
+      <div class="footer-newsletter inline-block">
+        <h5>Inscreva-se na nossa Newsletter</h5>
+        <form id="newsletter-form">
+          <div class="mb-3">
+            <input type="email" id="email-input" class="form-control" placeholder="Digite seu email" required>
+          </div>
+          <button type="submit" class="btn btn-danger" id="subscribe-button">Inscrever-se</button>
+        </form>
+      </div>
+
+
+      <hr>
+      <h6>&copy; 2025 - Notícias dos Amigos! Todos os direitos reservados.</h6>
+
+    </footer>
+    
+
+    <!-- Script do Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
